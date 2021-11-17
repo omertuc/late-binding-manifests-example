@@ -1,0 +1,9 @@
+apiVersion: agent-install.openshift.io/v1beta1
+kind: InfraEnv
+metadata:
+  name: demo
+  namespace: {{ namespace }}
+spec:
+  pullSecretRef:
+    name: demo
+    sshAuthorizedKey: {{ ssh_public_key }}
